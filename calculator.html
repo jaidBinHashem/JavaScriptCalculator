@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Calculator</title>
+		<script src="test.js"></script>
+	</head>
+	
+	<body onkeydown="keyBoardEvent(event)">
+		
+			<input id="display" type="text" size="4" name="numberOne" value="">
+			
+			<button type="submit" onClick="cancel('c')">C</button>
+			<button type="submit" onClick="cancel('ce')">CE</button><br><br>
+			
+			<button type="submit" onClick="keyDown('0')">0</button>
+			<button type="submit" onClick="keyDown('1')">1</button>
+			<button type="submit" onClick="keyDown('2')">2</button>
+			<button type="submit" onClick="keyDown('3')">3</button> <br>
+			<button type="submit" onClick="keyDown('4')">4</button> 
+			<button type="submit" onClick="keyDown('5')">5</button> 
+			<button type="submit" onClick="keyDown('6')">6</button> 
+			<button type="submit" onClick="keyDown('7')">7</button>  <br>  
+			<button type="submit" onClick="keyDown('8')">8</button> 
+			<button type="submit" onClick="keyDown('9')">9</button> 
+			<button type="submit" onClick="checkDecimal('.')">.</button> 
+			
+		
+			<button type="submit" onClick="addOperator('+')">+</button> <br>
+			<button type="submit" onClick="addOperator('-')">-</button> 
+			<button type="submit" onClick="addOperator('*')">*</button> 
+			<button type="submit" onClick="addOperator('/')">/</button>
+			<button type="submit" onClick="calculate()" >=</button>
+		
+			<p id="test"></p>
+		
+	</body>
+</html>
